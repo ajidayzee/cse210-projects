@@ -1,12 +1,15 @@
-class Sparrow : Bird
+namespace Animals
 {
-    public override void MakeSound()
+    class Sparrow : Bird
     {
-        Console.WriteLine($"{Name} the sparrow chirps happily");
-    }
+        public override void MakeSound()
+        {
+            Console.WriteLine($"{Name} the sparrow chirps happily");
+        }
 
-    public void BuildNest()
-    {
-        Console.WriteLine($"{Name} the sparrow is building a nest.");
+        public void BuildNest()
+        {
+            Console.WriteLine($"{Name} the sparrow is building a nest.");
+        }
     }
 }

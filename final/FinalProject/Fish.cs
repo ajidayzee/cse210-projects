@@ -1,14 +1,17 @@
-abstract class Fish : Animal  // Mark as abstract to indicate it's a base class
+namespace Animals
 {
-    public string ScaleColor { get; set; }
-
-    public override void MakeSound()
+    abstract class Fish : Animal  // Mark as abstract to indicate it's a base class
     {
-        Console.WriteLine($"{Name} the fish makes a bubbling sound.");
-    }
+        public string ScaleColor { get; set; }
 
-    public void Swim()
-    {
-        Console.WriteLine($"{Name} the fish is swimming.");
+        public override void MakeSound()
+        {
+            Console.WriteLine($"{Name} the fish makes a bubbling sound.");
+        }
+
+        public virtual void Swim()
+        {
+            Console.WriteLine($"{Name} the fish is swimming.");
+        }
     }
 }

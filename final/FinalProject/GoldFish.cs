@@ -1,12 +1,15 @@
-class Goldfish : Fish
+namespace Animals
 {
-    public override void MakeSound()
+    class Goldfish : Fish
     {
-        Console.WriteLine($"{Name} the goldfish makes a gentle bubbling sound.");
-    }
+        public override void MakeSound()
+        {
+            Console.WriteLine($"{Name} the goldfish makes a gentle bubbling sound.");
+        }
 
-    public new void Swim()  // Use the 'new' keyword to hide the inherited member
-    {
-        Console.WriteLine($"{Name} the goldfish is swimming.");
+        public override void Swim()
+        {
+            Console.WriteLine($"{Name} the goldfish is swimming.");
+        }
     }
 }

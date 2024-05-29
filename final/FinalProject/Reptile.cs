@@ -1,9 +1,12 @@
-class Reptile : Animal
+namespace Animals
 {
-    public string SkinType { get; set; }
-
-    public override void MakeSound()
+    class Reptile : Animal
     {
-        Console.WriteLine($"{Name} the reptile makes a hissing sound");
+        public string SkinType { get; set; }
+
+        public override void MakeSound()
+        {
+            Console.WriteLine($"{Name} the reptile makes a hissing sound");
+        }
     }
 }

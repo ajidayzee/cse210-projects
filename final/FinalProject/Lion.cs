@@ -1,11 +1,15 @@
+namespace Animals
 {
-    public override void MakeSound()
+    class Lion : Mammal
     {
-        Console.WriteLine($"{Name} the lion roars");
-    }
+        public override void MakeSound()
+        {
+            Console.WriteLine($"{Name} the lion roars");
+        }
 
-    public void GiveBirth()
-    {
-        Console.WriteLine($"{Name} the lion is giving birth.");
+        public override void GiveBirth()
+        {
+            Console.WriteLine($"{Name} the lion is giving birth.");
+        }
     }
 }

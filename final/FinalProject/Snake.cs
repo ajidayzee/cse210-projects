@@ -1,7 +1,10 @@
-class Snake : Reptile
+namespace Animals
 {
-    public override void MakeSound()
+    class Snake : Reptile
     {
-        Console.WriteLine($"{Name} the snake hisses menacingly");
+        public override void MakeSound()
+        {
+            Console.WriteLine($"{Name} the snake hisses menacingly");
+        }
     }
 }

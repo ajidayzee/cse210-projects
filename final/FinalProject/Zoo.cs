@@ -1,30 +1,33 @@
 using System;
 using System.Collections.Generic;
 
-class Zoo
+namespace Animals
 {
-    private List<Animal> animals;
-
-    public Zoo()
+    class Zoo
     {
-        animals = new List<Animal>();
-    }
+        private List<Animal> animals;
 
-    public void AddAnimal(Animal animal)
-    {
-        animals.Add(animal);
-    }
-
-    public void MakeAllSounds()
-    {
-        foreach (var animal in animals)
+        public Zoo()
         {
-            animal.MakeSound();
+            animals = new List<Animal>();
         }
-    }
 
-    public IEnumerable<Animal> GetAnimals()
-    {
-        return animals;
+        public void AddAnimal(Animal animal)
+        {
+            animals.Add(animal);
+        }
+
+        public void MakeAllSounds()
+        {
+            foreach (var animal in animals)
+            {
+                animal.MakeSound();
+            }
+        }
+
+        public IEnumerable<Animal> GetAnimals()
+        {
+            return animals;
+        }
     }
 }

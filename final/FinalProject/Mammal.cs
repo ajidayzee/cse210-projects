@@ -1,14 +1,17 @@
-class Mammal : Animal
+namespace Animals
 {
-    public string FurColor { get; set; }
-
-    public override void MakeSound()
+    class Mammal : Animal
     {
-        Console.WriteLine($"{Name} the mammal makes a sound");
-    }
+        public string FurColor { get; set; }
 
-    public void GiveBirth()
-    {
-        Console.WriteLine($"{Name} the mammal is giving birth.");
+        public override void MakeSound()
+        {
+            Console.WriteLine($"{Name} the mammal makes a sound");
+        }
+
+        public virtual void GiveBirth()
+        {
+            Console.WriteLine($"{Name} the mammal is giving birth.");
+        }
     }
 }

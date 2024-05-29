@@ -1,9 +1,12 @@
-class Bird : Animal
+namespace Animals
 {
-    public string FeatherColor { get; set; }
-
-    public override void MakeSound()
+    class Bird : Animal
     {
-        Console.WriteLine($"{Name} the bird makes a chirping sound");
+        public string FeatherColor { get; set; }
+
+        public override void MakeSound()
+        {
+            Console.WriteLine($"{Name} the bird makes a chirping sound");
+        }
     }
 }
