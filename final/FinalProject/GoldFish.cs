@@ -1,13 +1,11 @@
 class Goldfish : Fish
 {
-    public string ScaleColor { get; set; }
-
     public override void MakeSound()
     {
-        Console.WriteLine($"{Name} the goldfish makes a gentle bubbling sound");
+        Console.WriteLine($"{Name} the goldfish makes a gentle bubbling sound.");
     }
 
-    public void Swim()
+    public new void Swim()  // Use the 'new' keyword to hide the inherited member
     {
         Console.WriteLine($"{Name} the goldfish is swimming.");
     }
