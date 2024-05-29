@@ -1,5 +1,7 @@
 class Goldfish : Fish
 {
+    public string ScaleColor { get; set; }
+
     public override void MakeSound()
     {
         Console.WriteLine($"{Name} the goldfish makes a gentle bubbling sound");
