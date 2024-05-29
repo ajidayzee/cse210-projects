@@ -1,4 +1,4 @@
-class GoldFish : Fish
+class Goldfish : Fish
 {
     public override void MakeSound()
     {
