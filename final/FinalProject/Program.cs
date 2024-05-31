@@ -8,10 +8,10 @@ namespace ZooApp
     {
         static void Main()
         {
-            Lion lion = new Lion { Name = "Simba", Age = 3, FurColor = "Golden" };
-            Sparrow sparrow = new Sparrow { Name = "Tweetie", Age = 1, FeatherColor = "Brown" };
-            Goldfish goldfish = new Goldfish { Name = "Bubbles", Age = 2, ScaleColor = "Orange" };
-            Snake snake = new Snake { Name = "Nagini", Age = 5, SkinType = "Scales" };
+            Lion lion = new Lion { Name = "Burna", Age = 3, FurColor = "Golden" };
+            Sparrow sparrow = new Sparrow { Name = "Twe-Twe", Age = 1, FeatherColor = "Brown" };
+            Goldfish goldfish = new Goldfish { Name = "Wizzy", Age = 2, ScaleColor = "Orange" };
+            Snake snake = new Snake { Name = "Sule", Age = 5, SkinType = "Scales" };
 
             Zoo myZoo = new Zoo();
             myZoo.AddAnimal(lion);
